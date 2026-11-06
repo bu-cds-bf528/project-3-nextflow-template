@@ -1,10 +1,24 @@
 #!/usr/bin/env nextflow
 
-process SAMTOOLS_SORT {
+nextflow.enable.types = true
 
+process SAMTOOLS_SORT {
+    label ''
+    container ''
+
+    input:
+
+
+    output:
+
+
+    script:
+    """
+
+    """
 
     stub:
     """
-    touch ${sample_id}.stub.sorted.bam
+
     """
 }

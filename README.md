@@ -2,25 +2,17 @@
 
 For this project, remember to keep in a few things:
 
+You can find the general directions here: https://bu-bioinfo.github.io/bf528/projects/project_3_report/
+
 1. Most of the required references and files can be found in your `nextflow.config`
 
 2. Make sure you give each process a label to request an appropriate amount of resources
 
 3. Use the singularity containers provided on the website directions for the project
 
-4. I have given you valid stub commands that will let you troubleshoot your workflow logic using the `-stub-run` command
-- The stub-run commands assume that the first element in the tuple from the initial channel is named `sample_id` in processes
-- Ensure that the appropriate inputs for certain processes are a tuple with the first element being the name from the initial channel
-- The findPeaks stub will not be the same as `sample_id`. Remember that you will need to run findPeaks using the paired samples
-(IP_rep1 + INPUT_rep1) and (IP_rep2 + INPUT_rep2). You should name the peak outputs using the replicate (i.e. rep1_peaks.txt and rep2_peaks.txt)
-- You may alter the names used in the stub-run if it's easier for you
-
-The stub runs assume that you have something like below so that it can name the fake files using the sample names - this will ensure
-that your stub runs execute the same number of processes as the full pipeline should.
-```
-input:
-tuple val(sample_id), path(file)
-```
+4. Each module is a blank process that uses Nextflow static typing (`nextflow.enable.types = true`). The `stub:` block
+is left empty. Fill it in so you can check your workflow logic with `-stub-run`.
+- See `EXPECTED_OUTPUTS.md` for the files each step should produce and whether it runs per sample, per replicate, or once
 
 5. Use the subsampled data to start out with - you may need to eventually switch to the full data before your
 pipeline is technically complete as sometimes peak calling may fail if not given enough input reads. 
@@ -29,4 +21,10 @@ location of the full_samplesheet.csv
 
 6. To remove regions using the blacklist, there are optional flags available in the `bedtools intersect` command
 
-7. Create a single jupyter notebook that contains all of the results / figures and your write-up
+7. Use the provided jupyter notebook for your findings and plots
+
+You may use any resource available to you as long as you validate what your workflow is doing and understand
+the key choices made during the analysis. You can copy old workflow modules or publicly available ones or have
+an LLM assist you in writing it. 
+
+The `specifications.md` is meant to help you organize and think about which steps need to be reviewed in your pipeline.

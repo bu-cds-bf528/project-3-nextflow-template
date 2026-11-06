@@ -6,3 +6,5 @@ refs/
 .nextflow*
 *.gz
 *.img
+*.bam
+*.bw

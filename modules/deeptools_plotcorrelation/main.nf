@@ -1,16 +1,24 @@
 #!/usr/bin/env nextflow
 
-process PLOTCORRELATION {
+nextflow.enable.types = true
 
+process PLOTCORRELATION {
+    label ''
+    container ''
+
+    input:
+
+
+    output:
+
+
+    script:
+    """
+
+    """
 
     stub:
     """
-    touch correlation_plot.png
+
     """
 }
-
-
-
-
-
-

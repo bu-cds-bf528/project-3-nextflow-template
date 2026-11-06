@@ -1,10 +1,24 @@
 #!/usr/bin/env nextflow
 
-process MULTIQC {
+nextflow.enable.types = true
 
+process MULTIQC {
+    label ''
+    container ''
+
+    input:
+
+
+    output:
+
+
+    script:
+    """
+
+    """
 
     stub:
     """
-    touch multiqc_report.html
+
     """
 }

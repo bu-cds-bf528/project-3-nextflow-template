@@ -1,10 +1,24 @@
 #!/usr/bin/env nextflow
 
+nextflow.enable.types = true
+
 process COMPUTEMATRIX {
-    
+    label ''
+    container ''
+
+    input:
+
+
+    output:
+
+
+    script:
+    """
+
+    """
 
     stub:
     """
-    touch ${sample_id}_matrix.gz
+
     """
 }

@@ -1,10 +1,24 @@
 #!/usr/bin/env nextflow
 
-process MULTIBWSUMMARY {
+nextflow.enable.types = true
 
+process MULTIBWSUMMARY {
+    label ''
+    container ''
+
+    input:
+
+
+    output:
+
+
+    script:
+    """
+
+    """
 
     stub:
     """
-    touch bw_all.npz
+
     """
 }

@@ -1,12 +1,24 @@
 #!/usr/bin/env nextflow
 
-process FIND_MOTIFS_GENOME {
+nextflow.enable.types = true
 
+process FIND_MOTIFS_GENOME {
+    label ''
+    container ''
+
+    input:
+
+
+    output:
+
+
+    script:
+    """
+
+    """
 
     stub:
     """
-    mkdir motifs
+
     """
 }
-
-

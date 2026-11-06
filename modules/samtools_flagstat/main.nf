@@ -1,10 +1,24 @@
 #!/usr/bin/env nextflow
 
-process SAMTOOLS_FLAGSTAT {
+nextflow.enable.types = true
 
+process SAMTOOLS_FLAGSTAT {
+    label ''
+    container ''
+
+    input:
+
+
+    output:
+
+
+    script:
+    """
+
+    """
 
     stub:
     """
-    touch ${sample_id}_flagstat.txt
+
     """
 }

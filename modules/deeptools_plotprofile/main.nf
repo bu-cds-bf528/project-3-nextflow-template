@@ -1,11 +1,24 @@
 #!/usr/bin/env nextflow
 
-process PLOTPROFILE {
-    
+nextflow.enable.types = true
 
+process PLOTPROFILE {
+    label ''
+    container ''
+
+    input:
+
+
+    output:
+
+
+    script:
+    """
+
+    """
 
     stub:
     """
-    touch ${sample_id}_signal_coverage.png
+
     """
 }

@@ -1,11 +1,24 @@
 #!/usr/bin/env nextflow
 
-process FASTQC {
+nextflow.enable.types = true
 
+process FASTQC {
+    label ''
+    container ''
+
+    input:
+
+
+    output:
+
+
+    script:
+    """
+
+    """
 
     stub:
     """
-    touch stub_${sample_id}_fastqc.zip
-    touch stub_${sample_id}_fastqc.html
+
     """
 }

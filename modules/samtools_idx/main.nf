@@ -1,9 +1,24 @@
 #!/usr/bin/env nextflow
 
+nextflow.enable.types = true
+
 process SAMTOOLS_IDX {
+    label ''
+    container ''
+
+    input:
+
+
+    output:
+
+
+    script:
+    """
+
+    """
 
     stub:
     """
-    touch ${sample_id}.stub.sorted.bam.bai
+
     """
 }

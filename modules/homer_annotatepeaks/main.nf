@@ -1,13 +1,24 @@
 #!/usr/bin/env nextflow
 
-process ANNOTATE {
+nextflow.enable.types = true
 
+process ANNOTATE {
+    label ''
+    container ''
+
+    input:
+
+
+    output:
+
+
+    script:
+    """
+
+    """
 
     stub:
     """
-    touch annotated_peaks.txt
+
     """
 }
-
-
-

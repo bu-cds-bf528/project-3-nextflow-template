@@ -1,12 +1,24 @@
 #!/usr/bin/env nextflow
 
-process POS2BED {
+nextflow.enable.types = true
 
+process POS2BED {
+    label ''
+    container ''
+
+    input:
+
+
+    output:
+
+
+    script:
+    """
+
+    """
 
     stub:
     """
-    touch ${homer_txt.baseName}.bed
+
     """
 }
-
-

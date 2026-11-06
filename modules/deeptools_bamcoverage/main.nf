@@ -1,10 +1,24 @@
 #!/usr/bin/env nextflow
 
-process BAMCOVERAGE {
+nextflow.enable.types = true
 
+process BAMCOVERAGE {
+    label ''
+    container ''
+
+    input:
+
+
+    output:
+
+
+    script:
+    """
+
+    """
 
     stub:
     """
-    touch ${sample_id}.bw
+
     """
 }

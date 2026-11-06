@@ -1,11 +1,24 @@
 #!/usr/bin/env nextflow
 
-process TRIM {
+nextflow.enable.types = true
 
+process TRIM {
+    label ''
+    container ''
+
+    input:
+
+
+    output:
+
+
+    script:
+    """
+
+    """
 
     stub:
     """
-    touch ${sample_id}_stub_trim.log
-    touch ${sample_id}_stub_trimmed.fastq.gz
+
     """
 }

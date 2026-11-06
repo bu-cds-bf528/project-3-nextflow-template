@@ -1,12 +1,24 @@
 #!/usr/bin/env nextflow
 
-process TAGDIR {
+nextflow.enable.types = true
 
+process TAGDIR {
+    label ''
+    container ''
+
+    input:
+
+
+    output:
+
+
+    script:
+    """
+
+    """
 
     stub:
     """
-    mkdir ${sample_id}_tags
+
     """
 }
-
-

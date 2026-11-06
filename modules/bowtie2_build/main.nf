@@ -1,10 +1,24 @@
 #!/usr/bin/env nextflow
 
-process BOWTIE2_BUILD {
+nextflow.enable.types = true
 
+process BOWTIE2_BUILD {
+    label ''
+    container ''
+
+    input:
+
+
+    output:
+
+
+    script:
+    """
+
+    """
 
     stub:
     """
-    mkdir bowtie2_index
+
     """
 }
